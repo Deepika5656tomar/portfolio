@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5b119e00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span>D</span>EEPIKA
+                </div>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Deepika</span> <br>From India </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/pics4.jpg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="abt">About me</h1>
+                    <p>Dyanamic and result oriented professional with passion for web development.Proficientn in HTML,CSS,JavaScript and java.Skilled in problem solving and adapt at collaborating in team environments.Dedicated to continuous learning and enhance skills and contribute effectively.</p>
+                    <div class="title">
+                        <div class="links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="links" onclick="opentab('experience')">Experience</div>
+                        <div class="links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Website development</li>
+                            <li><span>Java Programming</span><br>Problem solving skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>GIRLSCRIPT SUMMER OF CODE'23</span><br>Open source contribution</li>
+                            <li><span>SOCIAL SUMMER OF CODE'23</span><br>Open source contribution</li>
+                            <li><span>THE SPARKS FOUNDATION</span><br>Web development intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>AJAY KUMAR GARG ENGINEERING COLLEGE, GHAZIABAD</span><br>B.Tech in CSE(AI&ML) {2021-2025}</li>
+                            <li><span>JAWAHAR NAVODAYA VIDYALAYA, GHAZIABAD</span><br>Intermediate with PCM {2020-2021}</li>
+                            <li><span>JAWAHAR NAVODAYA VIDYALAYA, GHAZIABAD</span><br>High School {2018-2019}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="abt">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>Experienced web designer proficient in HTML, CSS, and responsive design.Dedicated to crafting engaging and user-friendly digital experiences.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Developer</h2>
+                <p>Aspiring web developer eager to apply foundational skills in HTML, CSS, and JavaScript to real-world projects, seeking opportunities to learn and grow while contributing to dynamic teams.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Java Programmer</h2>
+                <p>Eager to apply foundational knowledge in Java to develop scalable and efficient software solutions,  seeking opportunities to contribute to collaborative projects and gain hands-on experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="abt">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/photos/work-1.jpg" >
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>Crafted an engaging and user friendly portfolio website</p>
+                    <a href="https://deepika-tomar-portfolio.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/photos/work-2.jpg" >
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Optimized design,responsiveness and visuals with CSS, ensure uniform experience for all users.</p>
+                    <a href="https://deepika-tomar-netflix.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/photos/work-3.jpg" >
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>I crafted a stylish calculator using HTML, CSS, and JavaScript. This project showcases my front-end development skills.</p>
+                    <a href="https://deepika-tomar-calculator.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="abt">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tomardeepika2610@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9536139706</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/deepika_tomar026/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/deepika-tomar-0ba3a8257/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Deepika5656tomar"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="photos/my_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Deepika<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxU20ZU9PIqEw46rObWtTj6NfJimhPJOnUtkKgaqz5_holjzVUJnSvYLWF3Wfac0am/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
